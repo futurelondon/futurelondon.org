@@ -9,35 +9,43 @@
   <body class="w-full">
     <!-- Front Matter -->
 
-    <div>
-      <header class="max-w-4xl mx-auto mb-8 flex justify-between items-center">
-        <h1 class="font-header font-normal text-2xl mt-12 relative">
+    <div class="w-full">
+      <header
+        class="w-full max-w-4xl mx-auto mb-4 sm:mb-8 pb-12 sm:pb-0 flex flex-col sm:flex-row justify-between items-center bg-purple-300 sm:bg-transparent"
+      >
+        <h1
+          class="font-header font-normal text-2xl mx-auto sm:mx-0 mt-12 relative"
+        >
           <span class="relative z-10 px-2 py-1">Future London</span>
           <span
-            class="absolute inset-0 bg-purple-300 transform -rotate-6 z-0"
+            class="absolute inset-0 bg-white sm:bg-purple-300 transform -rotate-6 z-0"
           ></span>
         </h1>
 
-        <div class="flex items-center space-x-3">
+        <div class="items-center space-x-3 sm:flex hidden">
           <h5 class="text-gray-500 mt-9">Seasons</h5>
           <ul class="flex space-x-1">
             <li class="bg-purple-200 px-3 py-3 pt-12">One</li>
           </ul>
         </div>
 
-        <div class="flex items-center space-x-3">
+        <div class="hidden sm:flex items-center space-x-3">
           <a href="#about" class="px-3 py-3 pt-12 hover:bg-purple-200">About</a>
         </div>
       </header>
 
-      <div class="max-w-6xl mx-auto mt-20 grid grid-cols-12">
+      <div
+        class="max-w-6xl mx-auto mt-0 text-left sm:mt-20 grid grid-cols-12 px-4 pt-0 sm:pt-0 sm:px-0"
+      >
         <main class="col-span-full">
-          <h3 class="text-2xl text-gray-700">
+          <h3 class="sm:text-2xl text-gray-700 flex flex-col sm:flex-row">
             <span class="text-gray-500 mr-2">Season One</span>
             <span class="font-medium">How do we fix the UK?</span>
           </h3>
-          <h2 class="text-9xl font-medium mt-10">
-            Just F***ing Build Something.
+          <h2 class="text-5xl text-left sm:text-9xl font-medium mt-10">
+            <span class="inline bg-purple-300 sm:bg-transparent">
+              Just F***ing Build Something.
+            </span>
           </h2>
         </main>
       </div>
@@ -45,7 +53,7 @@
 
     <!-- Calls to Action -->
 
-    <div class="w-full mt-20 text-xl flex">
+    <div class="w-full mt-20 text-xl flex flex-col sm:flex-row">
       <h4 class="w-full">
         <a
           href="https://chat.whatsapp.com/LuWcWtD04YM3DJTULmn2Fs"
