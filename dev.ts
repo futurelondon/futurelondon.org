@@ -24,7 +24,7 @@ serve({
     }
 
     const css = await file("src/index.css").text();
-    const html = await file("src/index.html").text();
+    let html = await file("src/index.html").text();
 
     if (changed) {
       const result = await postcss([
@@ -40,7 +40,7 @@ serve({
       console.log("reloaded");
     }
 
-    if (req.url.endsWith("/index.css")) {
+    if (req.url.includes("/index.css")) {
       return new Response(await file("docs/index.css").text(), {
         headers: { "content-type": "text/css; charset=utf-8" },
       });
@@ -55,6 +55,11 @@ serve({
         headers: { "content-type": mime },
       });
     }
+
+    html = html.replace(
+      '<link rel="stylesheet" href="/index.css" />',
+      `<link rel="stylesheet" href="/index.css?${cssModified}" />`
+    );
 
     return new Response(html, {
       headers: { "content-type": "text/html; charset=utf-8" },
