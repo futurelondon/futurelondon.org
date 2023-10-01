@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "bun run dev.ts",
+    "build": "tailwindcss -i src/index.css -o dist/index.css"
+  },
+  "dependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "bun-types": "^1.0.3"
+  }
+}
