@@ -6,48 +6,109 @@
     <title>Future London</title>
     <link rel="stylesheet" href="/index.css" />
   </head>
-  <body>
-    <header class="max-w-4xl mx-auto mb-8 flex justify-between items-center">
-      <h1 class="font-header font-normal text-2xl mt-12">Future London</h1>
+  <body class="w-full">
+    <!-- Front Matter -->
 
-      <div class="flex items-center space-x-3">
-        <h5 class="text-gray-500 mt-9">Seasons</h5>
-        <ul class="flex space-x-1">
-          <li class="bg-gray-50 px-3 py-3 pt-12">One</li>
-        </ul>
+    <div>
+      <header class="max-w-4xl mx-auto mb-8 flex justify-between items-center">
+        <h1 class="font-header font-normal text-2xl mt-12 relative">
+          <span class="relative z-10 px-2 py-1">Future London</span>
+          <span
+            class="absolute inset-0 bg-purple-300 transform -rotate-6 z-0"
+          ></span>
+        </h1>
+
+        <div class="flex items-center space-x-3">
+          <h5 class="text-gray-500 mt-9">Seasons</h5>
+          <ul class="flex space-x-1">
+            <li class="bg-purple-200 px-3 py-3 pt-12">One</li>
+          </ul>
+        </div>
+
+        <div class="flex items-center space-x-3">
+          <a href="#about" class="px-3 py-3 pt-12 hover:bg-purple-200">About</a>
+        </div>
+      </header>
+
+      <div class="max-w-6xl mx-auto mt-20 grid grid-cols-12">
+        <main class="col-span-full">
+          <h3 class="text-2xl text-gray-700">
+            <span class="text-gray-500 mr-2">Season One</span>
+            <span class="font-medium">How do we fix the UK?</span>
+          </h3>
+          <h2 class="text-9xl font-medium mt-10">
+            Just F***ing Build Something.
+          </h2>
+        </main>
       </div>
-
-      <div class="flex items-center space-x-3">
-        <a href="#about" class="px-3 py-3 pt-12 hover:bg-gray-50">About</a>
-      </div>
-    </header>
-
-    <div class="max-w-6xl mx-auto mt-20 grid grid-cols-12">
-      <main class="col-span-full">
-        <h3 class="text-2xl text-gray-700">
-          <span class="text-gray-500 mr-2">Season One</span>
-          <span class="font-medium">How do we fix the UK?</span>
-        </h3>
-        <h2 class="text-9xl font-medium mt-8">Just F***ing Build Something.</h2>
-      </main>
     </div>
 
-    <div class="max-w-6xl mx-auto mt-20 grid grid-cols-12">
-      <div class="col-span-2">
-        <h6 id="about" class="uppercase font-medium">S1E1</h6>
-      </div>
+    <!-- Calls to Action -->
 
-      <article class="col-span-6">
-        <h3>Where Is My Flying Car?</h3>
+    <div class="w-full mt-20 text-xl flex">
+      <h4 class="w-full">
+        <a href="#" class="block w-full text-center hover:bg-purple-200 p-10"
+          >Join the community.</a
+        >
+      </h4>
 
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error ipsa
-          placeat consequuntur minima corrupti fugiat voluptatum aperiam fuga. A
-          vel similique incidunt totam. Aliquam ex, et tenetur culpa sequi
-          assumenda?
-        </p>
-      </article>
+      <h4 class="w-full">
+        <a href="#" class="block w-full text-center hover:bg-purple-200 p-10"
+          >Attend the events.</a
+        >
+      </h4>
+
+      <h4 class="w-full">
+        <a href="#" class="block w-full text-center hover:bg-purple-200 p-10"
+          >Read the recaps.</a
+        >
+      </h4>
     </div>
+
+    <!-- Episode One -->
+
+    <a href="#" class="relative group">
+      <div
+        style="height: 400px; background-image: url(/images/flying-cars.jpeg)"
+        class="bg-cover bg-center"
+      ></div>
+
+      <div class="w-full top-0 absolute h-full text-white">
+        <div
+          class="z-10 max-w-6xl mx-auto flex flex-col items-start justify-center h-full"
+        >
+          <div class="flex items-center">
+            <h6 id="s1e1" class="uppercase font-bold mr-2">S1E1</h6>
+            <span>November 7th, 2023</span>
+          </div>
+
+          <article class="flex flex-col">
+            <h3 class="text-4xl font-medium font-title">
+              <span class="text-7xl">Where Is My Flying Car?</span>
+            </h3>
+
+            <p class="text-lg mt-4 text-gray-200">
+              <span class="inline bg-opacity-30 leading-10 p-2 bg-black"
+                >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error
+                ipsa placeat consequuntur minima corrupti fugiat voluptatum
+                aperiam fuga. A vel similique incidunt totam. Aliquam ex, et
+                tenetur culpa sequi assumenda?</span
+              >
+            </p>
+          </article>
+
+          <nav class="mt-4">
+            <button
+              class="bg-purple-700 group-hover:bg-purple-600 rounded-md px-4 py-2"
+            >
+              RSVP
+            </button>
+          </nav>
+        </div>
+      </div>
+    </a>
+
+    <!-- Episode Two -->
 
     <div class="max-w-6xl mx-auto mt-20 grid grid-cols-12">
       <div class="col-span-2">

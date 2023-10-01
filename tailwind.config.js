@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         header: ["Staatliches"],
+        title: ["Pixelify Sans"],
       },
     },
   },

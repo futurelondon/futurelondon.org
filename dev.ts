@@ -37,12 +37,22 @@ serve({
       });
 
       await write("dist/index.css", result.css);
-      console.log("Wrote dist/index.css");
+      console.log("reloaded");
     }
 
     if (req.url.endsWith("/index.css")) {
       return new Response(await file("dist/index.css").text(), {
         headers: { "content-type": "text/css; charset=utf-8" },
+      });
+    }
+
+    if (req.url.includes("/images/")) {
+      const image = req.url.split("/images/")[1];
+      const ext = image.split(".")[1];
+      const mime = ext === "png" ? "image/png" : "image/jpeg";
+
+      return new Response(await file(`dist/images/${image}`).arrayBuffer(), {
+        headers: { "content-type": mime },
       });
     }
 
