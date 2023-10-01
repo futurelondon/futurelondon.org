@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        header: ["Staatliches"],
+      },
+    },
   },
   plugins: [],
 };

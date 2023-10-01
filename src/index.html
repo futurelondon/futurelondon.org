@@ -7,6 +7,168 @@
     <link rel="stylesheet" href="/index.css" />
   </head>
   <body>
-    <h1 class="text-xs">foo</h1>
+    <header class="max-w-4xl mx-auto mb-8 flex justify-between items-center">
+      <h1 class="font-header font-normal text-2xl mt-12">Future London</h1>
+
+      <div class="flex items-center space-x-3">
+        <h5 class="text-gray-500 mt-9">Seasons</h5>
+        <ul class="flex space-x-1">
+          <li class="bg-gray-50 px-3 py-3 pt-12">One</li>
+        </ul>
+      </div>
+
+      <div class="flex items-center space-x-3">
+        <a href="#about" class="px-3 py-3 pt-12 hover:bg-gray-50">About</a>
+      </div>
+    </header>
+
+    <div class="max-w-6xl mx-auto mt-20 grid grid-cols-12">
+      <main class="col-span-full">
+        <h3 class="text-2xl text-gray-700">
+          <span class="text-gray-500 mr-2">Season One</span>
+          <span class="font-medium">How do we fix the UK?</span>
+        </h3>
+        <h2 class="text-9xl font-medium mt-8">Just F***ing Build Something.</h2>
+      </main>
+    </div>
+
+    <div class="max-w-6xl mx-auto mt-20 grid grid-cols-12">
+      <div class="col-span-2">
+        <h6 id="about" class="uppercase font-medium">S1E1</h6>
+      </div>
+
+      <article class="col-span-6">
+        <h3>Where Is My Flying Car?</h3>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error ipsa
+          placeat consequuntur minima corrupti fugiat voluptatum aperiam fuga. A
+          vel similique incidunt totam. Aliquam ex, et tenetur culpa sequi
+          assumenda?
+        </p>
+      </article>
+    </div>
+
+    <div class="max-w-6xl mx-auto mt-20 grid grid-cols-12">
+      <div class="col-span-2">
+        <h6 id="about" class="uppercase font-medium">S1E2</h6>
+      </div>
+
+      <article class="col-span-6">
+        <h3>Why Can't I Buy A House?</h3>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error ipsa
+          placeat consequuntur minima corrupti fugiat voluptatum aperiam fuga. A
+          vel similique incidunt totam. Aliquam ex, et tenetur culpa sequi
+          assumenda?
+        </p>
+      </article>
+    </div>
+
+    <div class="max-w-6xl mx-auto mt-20 grid grid-cols-12">
+      <div class="col-span-2">
+        <h6 id="about" class="uppercase font-medium">S1E3</h6>
+      </div>
+
+      <article class="col-span-6">
+        <h3>When will the UK land on The Moon?</h3>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error ipsa
+          placeat consequuntur minima corrupti fugiat voluptatum aperiam fuga. A
+          vel similique incidunt totam. Aliquam ex, et tenetur culpa sequi
+          assumenda?
+        </p>
+      </article>
+    </div>
+
+    <div class="max-w-6xl mx-auto mt-20 grid grid-cols-12">
+      <div class="col-span-2">
+        <h6 id="about" class="uppercase font-medium">S1E4</h6>
+      </div>
+
+      <article class="col-span-6">
+        <h3>Why Is Government Broken?</h3>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error ipsa
+          placeat consequuntur minima corrupti fugiat voluptatum aperiam fuga. A
+          vel similique incidunt totam. Aliquam ex, et tenetur culpa sequi
+          assumenda?
+        </p>
+      </article>
+    </div>
+
+    <div class="max-w-6xl mx-auto mt-20 grid grid-cols-12">
+      <div class="col-span-2">
+        <h6 id="about" class="uppercase font-medium">S1E5</h6>
+      </div>
+
+      <article class="col-span-6">
+        <h3>Where is my Robot Butler?</h3>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error ipsa
+          placeat consequuntur minima corrupti fugiat voluptatum aperiam fuga. A
+          vel similique incidunt totam. Aliquam ex, et tenetur culpa sequi
+          assumenda?
+        </p>
+      </article>
+    </div>
+
+    <div class="max-w-6xl mx-auto mt-20 grid grid-cols-12">
+      <div class="col-span-2">
+        <h6 id="about" class="uppercase font-medium">S1E6</h6>
+      </div>
+
+      <article class="col-span-6">
+        <h3>How do we get the UK to Energy Abundance?</h3>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error ipsa
+          placeat consequuntur minima corrupti fugiat voluptatum aperiam fuga. A
+          vel similique incidunt totam. Aliquam ex, et tenetur culpa sequi
+          assumenda?
+        </p>
+      </article>
+    </div>
+
+    <div class="bg-gray-50 w-full mt-20 py-20">
+      <div class="max-w-6xl mx-auto grid grid-cols-12">
+        <div class="col-span-2">
+          <h6 id="about" class="uppercase font-medium">About</h6>
+        </div>
+
+        <article class="col-span-6 space-y-6">
+          <p>
+            Future London is a community of high-agency techno-optimists. We
+            host events, both public and invite-only, to get more people
+            building.
+          </p>
+          <p>We believe that the UK is broken. But it doesn't have to be.</p>
+        </article>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      window.addEventListener("load", () => {
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute("href").substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+              window.scrollTo({
+                top: targetElement.offsetTop,
+                behavior: "smooth",
+              });
+            }
+          });
+        });
+      });
+    </script>
   </body>
 </html>
