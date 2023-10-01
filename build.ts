@@ -2,6 +2,7 @@ import { file, write } from "bun";
 import tailwind from "tailwindcss";
 import postcss from "postcss";
 import tailwindConfig from "./tailwind.config.js";
+import cssnanoPlugin from "cssnano";
 
 const css = await file("src/index.css").text();
 const cssModified = await file("src/index.css").lastModified;
@@ -12,6 +13,7 @@ const result = await postcss([
     ...tailwindConfig,
     content: [{ raw: html, extension: "html" }],
   }),
+  cssnanoPlugin(),
 ]).process(css, {
   from: undefined,
 });
