@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "bun run dev.ts",
-    "build": "tailwindcss -i src/index.css -o dist/index.css"
+    "build": "bun run build.ts"
   },
   "dependencies": {
     "tailwindcss": "^3.3.3"
