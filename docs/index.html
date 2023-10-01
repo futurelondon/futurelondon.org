@@ -77,7 +77,7 @@
 
     <div class="w-full">
       <header
-        class="w-full max-w-4xl mx-auto mb-4 sm:mb-8 pb-12 sm:pb-0 flex flex-col sm:flex-row justify-between items-center bg-purple-300 sm:bg-transparent"
+        class="w-full max-w-4xl mx-auto mb-0 sm:mb-8 pb-12 sm:pb-0 flex flex-col sm:flex-row justify-between items-center bg-purple-300 sm:bg-transparent"
       >
         <h1
           class="font-header font-normal text-2xl mx-auto sm:mx-0 mt-12 relative"
@@ -101,11 +101,11 @@
       </header>
 
       <div
-        class="max-w-6xl mx-auto mt-0 text-left sm:mt-20 grid grid-cols-12 px-4 pt-0 sm:pt-0 sm:px-0"
+        class="hidden sm:grid max-w-6xl mx-auto mt-0 text-left sm:mt-20 grid-cols-12 px-4 pt-0 sm:pt-0 sm:px-0"
       >
         <main class="col-span-full">
           <h3
-            class="sm:text-2xl text-gray-700 flex flex-col sm:flex-row mb-8 sm:mb-0"
+            class="sm:text-2xl text-gray-700 flex flex-col sm:flex-row mb-6 sm:mb-0"
           >
             <span class="text-gray-500 mr-2">Season One</span>
             <span class="font-medium">How do we fix the UK?</span>
@@ -157,10 +157,10 @@
     <a href="https://lu.ma/flying-cars" target="_blank" class="relative group">
       <div
         style="height: 400px; background-image: url(/images/flying-cars.jpeg)"
-        class="bg-cover bg-center"
+        class="bg-cover bg-center bg-blend-multiply bg-purple-200"
       ></div>
 
-      <div class="w-full top-0 absolute h-full text-white">
+      <div class="w-full top-0 absolute h-full text-white p-4 py-2 sm:p-0">
         <div
           class="z-10 max-w-6xl mx-auto flex flex-col items-start justify-center h-full"
         >
@@ -171,11 +171,13 @@
 
           <article class="flex flex-col">
             <h3 class="text-4xl font-medium font-title">
-              <span class="text-7xl">Where Is My Flying Car?</span>
+              <span class="text-6xl sm:text-7xl">Where Is My Flying Car?</span>
             </h3>
 
-            <p class="text-lg mt-4 text-gray-200">
-              <span class="inline bg-opacity-40 leading-10 py-2 bg-black">
+            <p class="text-sm sm:text-lg mt-4 text-gray-200">
+              <span
+                class="inline bg-opacity-40 leading-8 sm:leading-10 py-2 bg-black"
+              >
                 Why has progress in urban transport stalled? How can we get more
                 people, to more places, for less? Learn from the experts who are
                 literally making flying cars – and much else – possible.
@@ -199,9 +201,9 @@
     <a
       href="https://lu.ma/buy-a-house"
       target="_blank"
-      class="mt-10 block w-full hover:bg-purple-50 py-8"
+      class="pt-6 sm:px-4 sm:mt-10 block w-full hover:bg-purple-50 sm:py-8"
     >
-      <div class="max-w-6xl mx-auto grid grid-cols-12">
+      <div class="hidden max-w-6xl 6xl mx-auto sm:grid sm:grid-cols-12">
         <div class="col-span-2">
           <h6 id="s1e2" class="uppercase font-medium">S1E2</h6>
         </div>
@@ -214,14 +216,22 @@
           <p class="text-sm">December 5th, 2023</p>
         </aside>
       </div>
+
+      <div class="flex flex-col sm:hidden px-4">
+        <div class="flex items-center justify-between space-x-2 text-gray-700">
+          <h6 class="uppercase font-medium">S1E2</h6>
+          <p class="text-sm">December 5th, 2023</p>
+        </div>
+        <h3 class="text-2xl font-medium">Why Can't I Buy A House?</h3>
+      </div>
     </a>
 
     <a
       href="https://lu.ma/to-the-moon"
       target="_blank"
-      class="block w-full hover:bg-purple-50 py-8"
+      class="sm:px-4 block w-full hover:bg-purple-50 pt-8 sm:py-8"
     >
-      <div class="max-w-6xl mx-auto grid grid-cols-12">
+      <div class="hidden max-w-6xl mx-auto sm:grid grid-cols-12">
         <div class="col-span-2">
           <h6 id="about" class="uppercase font-medium">S1E3</h6>
         </div>
@@ -234,14 +244,22 @@
           <p class="text-sm">January 9th, 2024</p>
         </aside>
       </div>
+
+      <div class="flex flex-col sm:hidden px-4">
+        <div class="flex items-center justify-between space-x-2 text-gray-700">
+          <h6 class="uppercase font-medium">S1E3</h6>
+          <p class="text-sm">January 9th, 2024</p>
+        </div>
+        <h3 class="text-2xl font-medium">When will the UK land on The Moon?</h3>
+      </div>
     </a>
 
     <a
       href="https://lu.ma/broken-govt"
       target="_blank"
-      class="block w-full hover:bg-purple-50 py-8"
+      class="sm:px-4 block w-full hover:bg-purple-50 pt-8 sm:py-8"
     >
-      <div class="max-w-6xl mx-auto grid grid-cols-12">
+      <div class="hidden max-w-6xl mx-auto sm:grid grid-cols-12">
         <div class="col-span-2">
           <h6 id="about" class="uppercase font-medium">S1E4</h6>
         </div>
@@ -254,14 +272,22 @@
           <p class="text-sm">February 6th, 2024</p>
         </aside>
       </div>
+
+      <div class="flex flex-col sm:hidden px-4">
+        <div class="flex items-center justify-between space-x-2 text-gray-700">
+          <h6 class="uppercase font-medium">S1E4</h6>
+          <p class="text-sm">February 6th, 2024</p>
+        </div>
+        <h3 class="text-2xl font-medium">Why Is Government Broken?</h3>
+      </div>
     </a>
 
     <a
       href="https://lu.ma/robot-butler"
       target="_blank"
-      class="block w-full hover:bg-purple-50 py-8"
+      class="sm:px-4 block w-full hover:bg-purple-50 pt-8 sm:py-8"
     >
-      <div class="max-w-6xl mx-auto grid grid-cols-12">
+      <div class="hidden max-w-6xl mx-auto sm:grid grid-cols-12">
         <div class="col-span-2">
           <h6 id="about" class="uppercase font-medium">S1E5</h6>
         </div>
@@ -274,14 +300,22 @@
           <p class="text-sm">March 5th, 2024</p>
         </aside>
       </div>
+
+      <div class="flex flex-col sm:hidden px-4">
+        <div class="flex items-center justify-between space-x-2 text-gray-700">
+          <h6 class="uppercase font-medium">S1E5</h6>
+          <p class="text-sm">March 5th, 2024</p>
+        </div>
+        <h3 class="text-2xl font-medium">Where is my Robot Butler?</h3>
+      </div>
     </a>
 
     <a
       href="https://lu.ma/infinite-energy"
       target="_blank"
-      class="block w-full hover:bg-purple-50 py-8"
+      class="sm:px-4 block w-full hover:bg-purple-50 pt-8 sm:py-8"
     >
-      <div class="max-w-6xl mx-auto grid grid-cols-12">
+      <div class="hidden max-w-6xl mx-auto sm:grid grid-cols-12">
         <div class="col-span-2">
           <h6 id="about" class="uppercase font-medium">S1E6</h6>
         </div>
@@ -294,14 +328,24 @@
           <p class="text-sm">April 2nd, 2024</p>
         </aside>
       </div>
+
+      <div class="flex flex-col sm:hidden px-4">
+        <div class="flex items-center justify-between space-x-2 text-gray-700">
+          <h6 class="uppercase font-medium">S1E6</h6>
+          <p class="text-sm">April 2nd, 2024</p>
+        </div>
+        <h3 class="text-2xl font-medium">
+          How do we get the UK to Energy Abundance?
+        </h3>
+      </div>
     </a>
 
     <a
       href="https://lu.ma/first-finale"
       target="_blank"
-      class="block w-full hover:bg-purple-50 py-8"
+      class="sm:px-4 block w-full hover:bg-purple-50 pt-8 sm:py-8"
     >
-      <div class="max-w-6xl mx-auto grid grid-cols-12">
+      <div class="hidden max-w-6xl mx-auto sm:grid grid-cols-12">
         <div class="col-span-2">
           <h6 id="about" class="uppercase font-medium">S1E7</h6>
         </div>
@@ -314,6 +358,14 @@
           <p class="text-sm">May 7th, 2024</p>
         </aside>
       </div>
+
+      <div class="flex flex-col sm:hidden px-4">
+        <div class="flex items-center justify-between space-x-2 text-gray-700">
+          <h6 class="uppercase font-medium">S1E7</h6>
+          <p class="text-sm">May 7th, 2024</p>
+        </div>
+        <h3 class="text-2xl font-medium">Season Finale</h3>
+      </div>
     </a>
 
     <div class="w-full mt-10 py-20 relative overflow-hidden h-60">
@@ -321,13 +373,23 @@
         class="absolute inset-0 bg-purple-100 transform -rotate-3 z-0 h-96"
         style="width: 110%"
       ></div>
-      <div class="absolute top-0 w-full py-20">
-        <div class="max-w-6xl mx-auto grid grid-cols-12 w-full">
+      <div class="absolute top-0 w-full sm:py-20 py-10">
+        <div class="max-w-6xl mx-auto sm:grid grid-cols-12 w-full">
           <div class="col-span-2">
-            <h6 id="about" class="uppercase font-medium">About</h6>
+            <h6
+              id="about"
+              class="uppercase font-medium relative w-fit sm:w-full sm:mx-0 mx-auto mb-4 sm:mb-0"
+            >
+              <span class="relative z-10 px-2 py-1 font-medium">About</span>
+              <span
+                class="sm:hidden absolute inset-0 bg-white transform rotate-6 z-0"
+              ></span>
+            </h6>
           </div>
 
-          <article class="col-span-6 space-y-6">
+          <article
+            class="col-span-6 space-y-6 px-4 mt-6 sm:mt-0 text-sm sm:text-base"
+          >
             <p>
               Future London is a community of high-agency techno-optimists. We
               host events, both public and invite-only, to get more people
