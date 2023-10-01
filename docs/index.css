@@ -522,6 +522,9 @@ video {
 .mb-4{
   margin-bottom: 1rem;
 }
+.mb-8{
+  margin-bottom: 2rem;
+}
 .mr-2{
   margin-right: 0.5rem;
 }
@@ -793,12 +796,20 @@ video {
     margin-right: 0px;
   }
 
+  .sm\:mb-0{
+    margin-bottom: 0px;
+  }
+
   .sm\:mb-8{
     margin-bottom: 2rem;
   }
 
   .sm\:mt-20{
     margin-top: 5rem;
+  }
+
+  .sm\:block{
+    display: block;
   }
 
   .sm\:flex{
