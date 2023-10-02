@@ -3,10 +3,12 @@ import tailwind from "tailwindcss";
 import postcss from "postcss";
 import tailwindConfig from "./tailwind.config.js";
 
+const port = 9090;
+
 let lastModified = 0;
 
 serve({
-  port: 9090,
+  port,
   async fetch(req) {
     const cssModified = await file("src/index.css").lastModified;
     const htmlModified = await file("src/index.html").lastModified;
@@ -67,4 +69,4 @@ serve({
   },
 });
 
-console.log("Listening on http://localhost:9090");
+console.log(`Listening on http://localhost:${port}`);
